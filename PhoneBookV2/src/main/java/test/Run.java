@@ -82,7 +82,7 @@ public class Run {
         System.out.print("Eklemek istediğiniz kisinin Önceliğini Belirleyiniz: ('Family', 'Work', 'Social'): ");
         String priv = scanner.nextLine();
         Privilege privilege;
-        if (priv.equals("Family") || priv.equals("family"))
+        if (priv.equalsIgnoreCase("Family"))
             privilege = Privilege.FAMILY;
         else if (priv.equals("Work") || priv.equals("work"))
             privilege = Privilege.WORK;
